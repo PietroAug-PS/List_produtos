@@ -1,0 +1,77 @@
+body {
+    background-color: #ffffff;
+}
+header{
+   background-color: rgb(66, 229, 229);
+   height: 200px; 
+}
+.correção{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: left;
+    gap: 32%;
+}
+h1{
+    margin: 20px;
+    font-size: 50px;
+    text-align: center;
+}
+nav{
+    background-color: aquamarine;
+    margin: 0;
+}
+.navg{
+    flex-flow: row nowrap;
+    color:aliceblue;
+    display: flex;
+    flex-flow: row nowrap;
+    gap:20%;    
+    justify-content: space-around;
+    font-size: 1.8em;
+}
+.navg:hover{
+    color:red;
+}
+.nomedoprdt{
+    font-size: 16px;
+}
+img {
+    width: 200px;
+    height: 200px;
+}
+.preço{
+    color: green;
+    font-size: 15px;
+}
+.produto{
+    background-color: #ffffff;
+    margin: 10px;
+}
+.prdt{
+    margin: 10px;
+}
+.detalhe:hover{
+    color: darkblue;
+}
+.container_produtos{
+    display: flex; 
+    flex-flow: row wrap; 
+    justify-content: space-around; 
+    align-items: center;
+
+}
+.seçao{
+    background-color: aquamarine;
+}
+.nome{
+    font-size: 40px;
+    color: crimson;
+}
+.home{
+    width: 500px;
+    height: 500px;
+}
+.preco{
+    font-size: 30px;
+    color: green;
+}
