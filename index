@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifra Equipamentos</title>
+    <link rel="stylesheet" href="../static/styles/1reset.css">
+    <link type="text/css"rel="stylesheet" href="../static/styles/home.css">
+</head>
+<body> 
+    <header>
+        <div class="correção" >
+            <img  src="../static/imagens/Banner1.jpg" alt="Banner do site">
+            <img  src="../static/imagens/Banner2.jpg" alt="Banner do site2">
+        </div>    
+    </header>
+    <nav >
+        <ul class="navg">
+            <li>Pagina inicial</li>
+            <li>Contato</li>
+            <li><a href ="/"></a>Produtos</li>
+        </ul>
+    </nav>
+    <section class="seçao">
+    <h1>Nossos Produtos</h1>
+    <div class="container_produtos">
+    {% for produto in produtos %}
+       <div class="produto">
+        <h2 class="nomedoprdt">{{ produto.nome }}</h2>
+        <img class="prdt" width="150px" src="{{ url_for('static', filename='imagens/' + produto.imagem) }}" alt="" srcset="">
+        <p class="preço">R$ {{ produto.preco }}</p>
+        <a class="detalhe" href ="/produto/{{ produto.id }}"> Ver detalhes</a>
+
+    </div>
+    {% endfor %}
+    </div>
+    </section>
+    
+</body>
+</html>
